@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="RPiGripperController.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RPiGripperController"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock 
+            FontSize="25"
+            HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Gripper Arm Controller" VerticalAlignment="Top" Width="412"/>
+        <TextBlock
+            x:Name="textTarget"
+            HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="minwinpc1" VerticalAlignment="Top" Width="191"/>
+        <Button
+            x:Name="gripOpen"
+            Content="Open" HorizontalAlignment="Left" Margin="10,61,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button
+        	x:Name="gripClose"
+        	Content="Close" HorizontalAlignment="Left" Margin="10,115,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button
+        	x:Name="arm1Up"
+        	Content="Up" HorizontalAlignment="Left" Margin="121,61,0,0" Grid.Row="1" VerticalAlignment="Top" Width="59"/>
+        <Button
+        	x:Name="arm1Down"
+        	Content="Down" HorizontalAlignment="Left" Margin="121,115,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button
+        	x:Name="arm2Up"
+        	Content="Up" HorizontalAlignment="Left" Margin="199,61,0,0" Grid.Row="1" VerticalAlignment="Top" Width="59"/>
+        <Button
+        	x:Name="arm2Down"
+        	Content="Down" HorizontalAlignment="Left" Margin="199,115,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button
+        	x:Name="arm3Up"
+        	Content="Up" HorizontalAlignment="Left" Margin="283,61,0,0" Grid.Row="1" VerticalAlignment="Top" Width="59"/>
+        <Button
+        	x:Name="arm3Down"
+        	Content="Down" HorizontalAlignment="Left" Margin="283,115,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button
+        	x:Name="turnLeft"
+        	Content="Left" HorizontalAlignment="Left" Margin="121,193,0,0" Grid.Row="1" VerticalAlignment="Top" Width="59"/>
+        <Button
+        	x:Name="turnRight"
+        	Content="Right" HorizontalAlignment="Left" Margin="200,193,0,0" Grid.Row="1" VerticalAlignment="Top" Width="58"/>
+        <Button
+        	x:Name="ledOn"
+        	Content="On" HorizontalAlignment="Left" Margin="316,195,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66"/>
+        <Button
+        	x:Name="ledOff"
+        	Content="Off" HorizontalAlignment="Left" Margin="316,249,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66"/>
+
+    </Grid>
+</Page>

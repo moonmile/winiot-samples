@@ -1,0 +1,1 @@
+D:\work\RPi2\src\BluetoothBeetle\CS\BluetoothBeetle.csproj;x64
