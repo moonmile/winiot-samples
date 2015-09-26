@@ -1,0 +1,30 @@
+<head>
+<script type="text/javascript" src="jquery-1.10.2.js"></script>
+<script>
+
+function go(cmd) {
+	$.get("http://iot1:8081/" + cmd );
+}
+
+
+</script>
+
+</head>
+<body>
+<h1>boxing fighter controller</h1>
+
+<table>
+<tr>
+	<td><input type="button" onclick="go('left/f')" value="左▲">
+	<td><input type="button" onclick="go('right/f')" value="右▲">
+<tr>
+	<td><input type="button" onclick="go('left/b')" value="左▼">
+	<td><input type="button" onclick="go('right/b')" value="右▼">
+</table>
+
+<li><a href="http://iot1:8081/left/f">left forward</a>
+<li><a href="http://iot1:8081/left/b">left back</a>
+<li><a href="http://iot1:8081/right/f">right forward</a>
+<li><a href="http://iot1:8081/right/b">right back</a>
+
+</body>

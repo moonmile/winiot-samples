@@ -1,0 +1,1 @@
+C:\work\RPi2\src\RPiBoxing\RPiBoxing\RPiBoxing.csproj;arm
