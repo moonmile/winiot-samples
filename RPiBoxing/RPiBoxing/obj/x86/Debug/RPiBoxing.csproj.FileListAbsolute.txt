@@ -235,7 +235,6 @@ D:\git\winiot-samples\RPiBoxing\RPiBoxing\bin\x86\Debug\System.Xml.ReaderWriter.
 D:\git\winiot-samples\RPiBoxing\RPiBoxing\bin\x86\Debug\System.Xml.XDocument.dll
 D:\git\winiot-samples\RPiBoxing\RPiBoxing\bin\x86\Debug\System.Xml.XmlDocument.dll
 D:\git\winiot-samples\RPiBoxing\RPiBoxing\bin\x86\Debug\System.Xml.XmlSerializer.dll
-D:\git\winiot-samples\RPiBoxing\RPiBoxing\obj\x86\Debug\RPiBoxing.csprojResolveAssemblyReference.cache
 D:\git\winiot-samples\RPiBoxing\RPiBoxing\obj\x86\Debug\App.g.i.cs
 D:\git\winiot-samples\RPiBoxing\RPiBoxing\obj\x86\Debug\App.g.cs
 D:\git\winiot-samples\RPiBoxing\RPiBoxing\obj\x86\Debug\MainPage.g.i.cs
@@ -870,3 +869,4 @@ C:\work\RPi2\src\RPiBoxing\RPiBoxing\obj\x86\Debug\Core\System.Xml.XmlSerializer
 C:\work\RPi2\src\RPiBoxing\RPiBoxing\obj\x86\Debug\Core\RPiBoxing.xr.xml
 C:\work\RPi2\src\RPiBoxing\RPiBoxing\obj\x86\Debug\Core\WinMetadata\Windows.winmd
 C:\work\RPi2\src\RPiBoxing\RPiBoxing\obj\x86\Debug\Core\resources.pri
+D:\git\winiot-samples\RPiBoxing\RPiBoxing\obj\x86\Debug\RPiBoxing.csprojResolveAssemblyReference.cache

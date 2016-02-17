@@ -1,0 +1,2 @@
+D:\git\winiot-samples\FSharpIoTCoreSample\FSharpIoTCoreSample\FSharpIoTCoreSample.csproj;x86
+D:\git\winiot-samples\FSharpIoTCoreSample\FSharpPcl\FSharpPcl.fsproj;neutral

@@ -46,6 +46,10 @@
             <ToggleSwitch x:ConnectionId='10'
                 Foreground="White" FontSize="30"
                 x:Name="sw1" Header="LED" HorizontalAlignment="Left" Margin="34,236,0,0" Grid.Row="1" VerticalAlignment="Top" Background="Green" Width="178"/>
+            <TextBlock 
+            	FontSize="24" Foreground="white"
+            	HorizontalAlignment="Left" Margin="34,338,0,0" Grid.Row="1" TextWrapping="Wrap" 
+                Text="{Binding BLETap}" VerticalAlignment="Top" Width="234"/>
         </Grid>
         <Button x:ConnectionId='1'
             FontSize="32" Foreground="White"

@@ -51,49 +51,49 @@ namespace RPiBoxing
     /// <summary>
     /// 単純なモーター制御
     /// </summary>
-    public class Motor
+public class Motor
+{
+    GpioPin out1 { get; set; }
+    GpioPin out2 { get; set; }
+    public Motor(int pin1, int pin2)
     {
-        GpioPin out1 { get; set; }
-        GpioPin out2 { get; set; }
-        public Motor(int pin1, int pin2)
+        this.out1 = RPi.gpio.OpenPin(pin1);
+        this.out2 = RPi.gpio.OpenPin(pin2);
+        this.out1.Write(GpioPinValue.Low);
+        this.out2.Write(GpioPinValue.Low);
+        this.out1.SetDriveMode(GpioPinDriveMode.Output);
+        this.out2.SetDriveMode(GpioPinDriveMode.Output);
+        _dir = 0;
+    }
+    int _dir = 0;
+    /// <summary>
+    /// 回転方向を変える
+    /// </summary>
+    public int Direction
+    {
+        get { return _dir; }
+        set
         {
-            this.out1 = RPi.gpio.OpenPin(pin1);
-            this.out2 = RPi.gpio.OpenPin(pin2);
-            this.out1.Write(GpioPinValue.Low);
-            this.out2.Write(GpioPinValue.Low);
-            this.out1.SetDriveMode(GpioPinDriveMode.Output);
-            this.out2.SetDriveMode(GpioPinDriveMode.Output);
-            _dir = 0;
-        }
-        int _dir = 0;
-        /// <summary>
-        /// 回転方向を変える
-        /// </summary>
-        public int Direction
-        {
-            get { return _dir; }
-            set
+            if (_dir != value)
             {
-                if (_dir != value)
+                _dir = value;
+                if (_dir == 0)
                 {
-                    _dir = value;
-                    if (_dir == 0)
-                    {
-                        this.out1.Write(GpioPinValue.Low);
-                        this.out2.Write(GpioPinValue.Low);
-                    }
-                    else if (_dir > 0)
-                    {
-                        this.out1.Write(GpioPinValue.High);
-                        this.out2.Write(GpioPinValue.Low);
-                    }
-                    else
-                    {
-                        this.out1.Write(GpioPinValue.Low);
-                        this.out2.Write(GpioPinValue.High);
-                    }
+                    this.out1.Write(GpioPinValue.Low);
+                    this.out2.Write(GpioPinValue.Low);
+                }
+                else if (_dir > 0)
+                {
+                    this.out1.Write(GpioPinValue.High);
+                    this.out2.Write(GpioPinValue.Low);
+                }
+                else
+                {
+                    this.out1.Write(GpioPinValue.Low);
+                    this.out2.Write(GpioPinValue.High);
                 }
             }
         }
     }
+}
 }

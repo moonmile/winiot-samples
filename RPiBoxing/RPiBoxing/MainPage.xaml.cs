@@ -60,7 +60,11 @@ namespace RPiBoxing
             this.KeyRFront.PointerPressed += Key_PointerPressed;
             this.KeyRBack.PointerPressed += Key_PointerPressed;
             this.sw1.Toggled += Sw1_Toggled;
+            // バインド
+            _model = new DataModel();
+            this.DataContext = _model;
         }
+        DataModel _model;
 
         private void Sw1_Toggled(object sender, RoutedEventArgs e)
         {
@@ -74,24 +78,28 @@ namespace RPiBoxing
         {
             if (sender == KeyLFront)
             {
+                _model.BLETap = "Left F";
                 motorLeft.Direction = 1;
                 await Task.Delay(1000);     // 1秒だけ動かす
                 motorLeft.Direction = 0;
             }
             else if (sender == KeyLBack)
             {
+                _model.BLETap = "Left B";
                 motorLeft.Direction = -1;
                 await Task.Delay(1000);     // 1秒だけ動かす
                 motorLeft.Direction = 0;
             }
             else if (sender == KeyRFront)
             {
+                _model.BLETap = "Right F";
                 motorRight.Direction = 1;
                 await Task.Delay(1000);     // 1秒だけ動かす
                 motorRight.Direction = 0;
             }
             else if (sender == KeyRBack)
             {
+                _model.BLETap = "Right B";
                 motorRight.Direction = -1;
                 await Task.Delay(1000);     // 1秒だけ動かす
                 motorRight.Direction = 0;
@@ -275,21 +283,25 @@ namespace RPiBoxing
             {
                 if ((data & 0x01) == 0x01)
                 {
+                    _model.BLETap = "Right F";
                     KeyRFront.Background = new SolidColorBrush(Colors.Green);
                     motorRight.Direction = 1;
                 }
                 else
                 {
+                    _model.BLETap = "";
                     KeyRFront.Background = new SolidColorBrush(Colors.Red);
                     motorRight.Direction = 0;
                 }
                 if ((data & 0x02) == 0x02)
                 {
+                    _model.BLETap = "Left F";
                     KeyLFront.Background = new SolidColorBrush(Colors.Green);
                     motorLeft.Direction = 1;
                 }
                 else
                 {
+                    _model.BLETap = "";
                     KeyLFront.Background = new SolidColorBrush(Colors.Red);
                     motorLeft.Direction = 0;
                 }
@@ -343,6 +355,16 @@ namespace RPiBoxing
             }
             // 応答を送信
             _server.SendResponse("response " + data);
+        }
+    }
+
+    public class DataModel : BindableBase
+    {
+        private string _bleTap = "";
+        public string BLETap
+        {
+            get { return _bleTap; }
+            set { this.SetProperty(ref _bleTap, value);  }
         }
     }
 }

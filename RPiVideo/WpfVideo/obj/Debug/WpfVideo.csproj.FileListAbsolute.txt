@@ -1,0 +1,14 @@
+D:\git\winiot-samples\RPiVideo\WpfVideo\bin\Debug\WpfVideo.exe.config
+D:\git\winiot-samples\RPiVideo\WpfVideo\bin\Debug\WpfVideo.exe
+D:\git\winiot-samples\RPiVideo\WpfVideo\bin\Debug\WpfVideo.pdb
+D:\git\winiot-samples\RPiVideo\WpfVideo\obj\Debug\WpfVideo.csprojResolveAssemblyReference.cache
+D:\git\winiot-samples\RPiVideo\WpfVideo\obj\Debug\MainWindow.g.cs
+D:\git\winiot-samples\RPiVideo\WpfVideo\obj\Debug\App.g.cs
+D:\git\winiot-samples\RPiVideo\WpfVideo\obj\Debug\WpfVideo_MarkupCompile.cache
+D:\git\winiot-samples\RPiVideo\WpfVideo\obj\Debug\WpfVideo_MarkupCompile.lref
+D:\git\winiot-samples\RPiVideo\WpfVideo\obj\Debug\MainWindow.baml
+D:\git\winiot-samples\RPiVideo\WpfVideo\obj\Debug\WpfVideo.g.resources
+D:\git\winiot-samples\RPiVideo\WpfVideo\obj\Debug\WpfVideo.Properties.Resources.resources
+D:\git\winiot-samples\RPiVideo\WpfVideo\obj\Debug\WpfVideo.csproj.GenerateResource.Cache
+D:\git\winiot-samples\RPiVideo\WpfVideo\obj\Debug\WpfVideo.exe
+D:\git\winiot-samples\RPiVideo\WpfVideo\obj\Debug\WpfVideo.pdb

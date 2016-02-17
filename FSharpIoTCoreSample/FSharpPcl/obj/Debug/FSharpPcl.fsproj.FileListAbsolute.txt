@@ -1,0 +1,8 @@
+D:\git\winiot-samples\FSharpIoTCoreSample\FSharpPcl\bin\Debug\FSharpPcl.XML
+D:\git\winiot-samples\FSharpIoTCoreSample\FSharpPcl\bin\Debug\FSharpPcl.dll
+D:\git\winiot-samples\FSharpIoTCoreSample\FSharpPcl\bin\Debug\FSharpPcl.pdb
+D:\git\winiot-samples\FSharpIoTCoreSample\FSharpPcl\bin\Debug\FSharp.Core.dll
+D:\git\winiot-samples\FSharpIoTCoreSample\FSharpPcl\bin\Debug\FSharp.Core.xml
+D:\git\winiot-samples\FSharpIoTCoreSample\FSharpPcl\bin\Debug\ja\FSharp.Core.resources.dll
+D:\git\winiot-samples\FSharpIoTCoreSample\FSharpPcl\obj\Debug\FSharpPcl.dll
+D:\git\winiot-samples\FSharpIoTCoreSample\FSharpPcl\obj\Debug\FSharpPcl.pdb
