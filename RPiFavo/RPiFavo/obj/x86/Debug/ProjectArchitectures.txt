@@ -1,0 +1,1 @@
+D:\git\winiot-samples\RPiFavo\RPiFavo\RPiFavo.csproj;x86
