@@ -31,17 +31,10 @@ namespace RPiFavo
 
         // ここは消しておくこと!!! 
         // MACアドレスで暗号化するとか。
-        /*
         const string ApiKey = "API_KEY";
         const string ApiSecret = "API_SECRET";
         const string AccessToken = "ACCESS_TOKEN";
         const string AccessTokenSecret = "ACCESS_TOKEN_SECRET";
-        */
-
-        const string ApiKey = "9pdZqU2keFbH1CKm1Cbu9Xhtz";
-        const string ApiSecret = "AsSbNtcT2YgCKkVAbVqDjLqwVu4vGTAVOT109Eztug5pjymVZR";
-        const string AccessToken = "794799829218009088-2FYHyZRgLs8tchkZXGxRgH2DQ1Mm3an";
-        const string AccessTokenSecret = "Zn2BX7A266tMYtTWHo9hZau04pcXY2DUnrDkWLsyEQ0LJ";
 
         /// <summary>
         /// ファボを取得
